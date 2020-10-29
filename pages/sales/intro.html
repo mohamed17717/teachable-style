@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://thegoodzone.pythonanywhere.com/static/assets/css/pages/course.css">
+
+<div id="course-intro" data-enrolled="{{ course.user_enrolled? }}"  data-styleexception="true" data-courseid="{{ course.id  }}" style="background-image: url({{course.image_url  }});">
+  <section>
+    <h1>{{course.name}}</h1>
+
+    <div class="rating">
+
+    </div>
+
+    <a href="#course-price" class="solid">enroll in course</a>
+  </section>
+</div>
+
+<div id="course-content">
+  <section>
+    <div>
+      <h2>About this course</h2>
+      <p>
+        {{ course.heading }}
+      </p>
+    </div>
+  </section>
+</div>
